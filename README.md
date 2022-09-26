@@ -13,13 +13,12 @@ This is sample api for customer to apply for loan. Which has below features.
 - Run `cp .env.example .env`
 - Run `php artisan key:generate`
 - Run `php artisan migrate`
-- Run `php artisan serve`
 - Run `php artisan passport:install`
-- Run `php artisan passport:keys`
+- Run `php artisan serve`
 
 ## Postman Collection
 
-- [Postman Collection](https://www.getpostman.com/collections/1865a4ef920033776cef)
+- [Postman Collection](in the git file with name:Loan Request.postman_collection.json)
 
 ## Third-party Packages Used
 

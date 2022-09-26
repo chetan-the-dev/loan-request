@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "9151a06d-837d-424e-aafa-45437c82a640",
+		"name": "Loan Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get All Loan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGRhMGQ0ZmFiNGVhYmU4NDcyMmQ2MmIwMmQ4ZDlkMWVkZjFmMzQzNGIyMzg5ZjA3NTE2ZGJhYjMxMzE5MzMzYTAxYjkyYTVjNTNhOGExZjMiLCJpYXQiOjE2NjQyMjM4MDEuMjI5NDc3LCJuYmYiOjE2NjQyMjM4MDEuMjI5NDgxLCJleHAiOjE2OTU3NTk4MDEuMjE5NzU4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.LkkOtxZVTH1tNZ0fFmBOpkF10JCvMmgRXWRQwKZLmEJwJGKRZfFLE-dbukIic4sSnroGMiPHHtmilKRWGW6hMdvhJATk-aZT8tG7PSElIlbaJxPrvKBMnoz29qF9o3kcSIEmSKbCRroM88owCdg2tZR3mW-q7yYG_hH0X6Hg1WbWBZC-CWx3h5QJmkKKVS8aVS_mK9bqNIEdUGFz5AVmfQYthOWLxgZMwvsWH4fb8elPcTqbwgz41xw4xjFu5NuCL2eeUjqdyg4eZ1K-n0MZI7YfwwmPJr_9GdCz5F-AMUscsTs6vCxZ81JU6q6pdxQUn8eMovxXXZGP3V3H6hNRBNxxoNP83jF6xnYBjMCdmch5XqpL82kLzu0kzu6naEqgXQY1ul7IxK2E0Xj4ABKQo7jEd03G_gyiZMu4lP6gff9TmmIiCfwNeSBOnGhDrzBzEhmkJAY7etXecnG1QphJQxKMqgc62TTc_2N6Fa3TECpCGbm2EmgJm8dFCA1wHNPeqWSC893O9Zr_GoKYAczgFGjrddlNH83MgOMnVYpRu5gSzFBTubzRwmhWrbTtFYAbqzuujKXIVD0Q8wZo8M6KcF3ZcwT0qXqp26EsR2UhNkbpc-lfP4kwecOiIS1H0z8p8s022_Jhnqc81e8DQdXJlVOCQKFmNc8xH1lpW8IKc0w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}/loans/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"loans",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Loan Status",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGRhMGQ0ZmFiNGVhYmU4NDcyMmQ2MmIwMmQ4ZDlkMWVkZjFmMzQzNGIyMzg5ZjA3NTE2ZGJhYjMxMzE5MzMzYTAxYjkyYTVjNTNhOGExZjMiLCJpYXQiOjE2NjQyMjM4MDEuMjI5NDc3LCJuYmYiOjE2NjQyMjM4MDEuMjI5NDgxLCJleHAiOjE2OTU3NTk4MDEuMjE5NzU4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.LkkOtxZVTH1tNZ0fFmBOpkF10JCvMmgRXWRQwKZLmEJwJGKRZfFLE-dbukIic4sSnroGMiPHHtmilKRWGW6hMdvhJATk-aZT8tG7PSElIlbaJxPrvKBMnoz29qF9o3kcSIEmSKbCRroM88owCdg2tZR3mW-q7yYG_hH0X6Hg1WbWBZC-CWx3h5QJmkKKVS8aVS_mK9bqNIEdUGFz5AVmfQYthOWLxgZMwvsWH4fb8elPcTqbwgz41xw4xjFu5NuCL2eeUjqdyg4eZ1K-n0MZI7YfwwmPJr_9GdCz5F-AMUscsTs6vCxZ81JU6q6pdxQUn8eMovxXXZGP3V3H6hNRBNxxoNP83jF6xnYBjMCdmch5XqpL82kLzu0kzu6naEqgXQY1ul7IxK2E0Xj4ABKQo7jEd03G_gyiZMu4lP6gff9TmmIiCfwNeSBOnGhDrzBzEhmkJAY7etXecnG1QphJQxKMqgc62TTc_2N6Fa3TECpCGbm2EmgJm8dFCA1wHNPeqWSC893O9Zr_GoKYAczgFGjrddlNH83MgOMnVYpRu5gSzFBTubzRwmhWrbTtFYAbqzuujKXIVD0Q8wZo8M6KcF3ZcwT0qXqp26EsR2UhNkbpc-lfP4kwecOiIS1H0z8p8s022_Jhnqc81e8DQdXJlVOCQKFmNc8xH1lpW8IKc0w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "loan_status",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/loans/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"loans",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chetan Rathod",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "rathodchetan1@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "default"
+						},
+						{
+							"key": "user_role",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "c_password",
+							"value": "123456789",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/register",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "rathodchetan1@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Loan",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmFiYjE3Yzc0NTFmNDEwMWEwY2JjN2RlNDNkZmZhYzdlNmRmODk0NGYzZTEwYWY3YjZhOWExODQ4OWFmN2YzODM1ZjEyNTQxMzM0MDMwZTgiLCJpYXQiOjE2NjQyMjM3NDEuMzQ5ODY3LCJuYmYiOjE2NjQyMjM3NDEuMzQ5ODcsImV4cCI6MTY5NTc1OTc0MS4zNDI2Niwic3ViIjoiMSIsInNjb3BlcyI6W119.Vwo52j_TeVsq51kaYozh0ZXUB-T4yRX2o98l5ApxuMSXHLeF7yaPAjkPg15LGK0LRr-1SbClZ59LeCkreBDkDkqiq4LhoX0a7x6HfQvGSqC-GaojZuVaynwDI19F2JaCengvgZL2MU8uST6LUbJAWRIIOS5eZ8rbC8WxpmC32OdJ5Jlj9ptnjPqMIiqWGZVrk6HcBFoGkM6QvRXp7SrgcYJCsqPALmJUMSYwO5mKf5C_t5zykGy5eSsJevKYoqfQoZYEi5kKzCNXqFvvv9Y2jkVMbfX1JVlQXhL9TWJzUC9UtUU7YqshcOZd_CKsKatkvyVc0ib9iVq6hkryfm_sRVhz3trQh2LeloCLRBQ0z3s9woipZ_VISogaUX-xD_sQgFmffSLI_-Cap_x7lnmi3Phn84MYPEaQQ9Re_8_3jCxcYF1siDashga50Rm0vHrhS3b4r9GVxVO9wT01oDl1jmlI-DKYWbvNp3NtzBOPPyInnL48LTJ2EPLyTmHVc0ngO4fypGGxQd8hDhiMHMhSV66C_jSECfxsk3CH_ez12xx8U8NP3aZMe_iXEBe0j1kVqWPv4YnBRGHI_TTtBC0yQyRf2vPtUvZs0LxN-1tNdnGa8gv-U0a7Qj2CgsqPyeI_YiI95VpkMFJcfLLiMWJHB38cctSaAZdsPEWT9pVFakI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "30000",
+							"type": "default"
+						},
+						{
+							"key": "loan_tenor",
+							"value": "3",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/loans/create",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"loans",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Loan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmFiYjE3Yzc0NTFmNDEwMWEwY2JjN2RlNDNkZmZhYzdlNmRmODk0NGYzZTEwYWY3YjZhOWExODQ4OWFmN2YzODM1ZjEyNTQxMzM0MDMwZTgiLCJpYXQiOjE2NjQyMjM3NDEuMzQ5ODY3LCJuYmYiOjE2NjQyMjM3NDEuMzQ5ODcsImV4cCI6MTY5NTc1OTc0MS4zNDI2Niwic3ViIjoiMSIsInNjb3BlcyI6W119.Vwo52j_TeVsq51kaYozh0ZXUB-T4yRX2o98l5ApxuMSXHLeF7yaPAjkPg15LGK0LRr-1SbClZ59LeCkreBDkDkqiq4LhoX0a7x6HfQvGSqC-GaojZuVaynwDI19F2JaCengvgZL2MU8uST6LUbJAWRIIOS5eZ8rbC8WxpmC32OdJ5Jlj9ptnjPqMIiqWGZVrk6HcBFoGkM6QvRXp7SrgcYJCsqPALmJUMSYwO5mKf5C_t5zykGy5eSsJevKYoqfQoZYEi5kKzCNXqFvvv9Y2jkVMbfX1JVlQXhL9TWJzUC9UtUU7YqshcOZd_CKsKatkvyVc0ib9iVq6hkryfm_sRVhz3trQh2LeloCLRBQ0z3s9woipZ_VISogaUX-xD_sQgFmffSLI_-Cap_x7lnmi3Phn84MYPEaQQ9Re_8_3jCxcYF1siDashga50Rm0vHrhS3b4r9GVxVO9wT01oDl1jmlI-DKYWbvNp3NtzBOPPyInnL48LTJ2EPLyTmHVc0ngO4fypGGxQd8hDhiMHMhSV66C_jSECfxsk3CH_ez12xx8U8NP3aZMe_iXEBe0j1kVqWPv4YnBRGHI_TTtBC0yQyRf2vPtUvZs0LxN-1tNdnGa8gv-U0a7Qj2CgsqPyeI_YiI95VpkMFJcfLLiMWJHB38cctSaAZdsPEWT9pVFakI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/user/loans",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"user",
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User loan repayment",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAsssiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmFiYjE3Yzc0NTFmNDEwMWEwY2JjN2RlNDNkZmZhYzdlNmRmODk0NGYzZTEwYWY3YjZhOWExODQ4OWFmN2YzODM1ZjEyNTQxMzM0MDMwZTgiLCJpYXQiOjE2NjQyMjM3NDEuMzQ5ODY3LCJuYmYiOjE2NjQyMjM3NDEuMzQ5ODcsImV4cCI6MTY5NTc1OTc0MS4zNDI2Niwic3ViIjoiMSIsInNjb3BlcyI6W119.Vwo52j_TeVsq51kaYozh0ZXUB-T4yRX2o98l5ApxuMSXHLeF7yaPAjkPg15LGK0LRr-1SbClZ59LeCkreBDkDkqiq4LhoX0a7x6HfQvGSqC-GaojZuVaynwDI19F2JaCengvgZL2MU8uST6LUbJAWRIIOS5eZ8rbC8WxpmC32OdJ5Jlj9ptnjPqMIiqWGZVrk6HcBFoGkM6QvRXp7SrgcYJCsqPALmJUMSYwO5mKf5C_t5zykGy5eSsJevKYoqfQoZYEi5kKzCNXqFvvv9Y2jkVMbfX1JVlQXhL9TWJzUC9UtUU7YqshcOZd_CKsKatkvyVc0ib9iVq6hkryfm_sRVhz3trQh2LeloCLRBQ0z3s9woipZ_VISogaUX-xD_sQgFmffSLI_-Cap_x7lnmi3Phn84MYPEaQQ9Re_8_3jCxcYF1siDashga50Rm0vHrhS3b4r9GVxVO9wT01oDl1jmlI-DKYWbvNp3NtzBOPPyInnL48LTJ2EPLyTmHVc0ngO4fypGGxQd8hDhiMHMhSV66C_jSECfxsk3CH_ez12xx8U8NP3aZMe_iXEBe0j1kVqWPv4YnBRGHI_TTtBC0yQyRf2vPtUvZs0LxN-1tNdnGa8gv-U0a7Qj2CgsqPyeI_YiI95VpkMFJcfLLiMWJHB38cctSaAZdsPEWT9pVFakI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "loan_status",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/user/loan/repayment",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"user",
+						"loan",
+						"repayment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

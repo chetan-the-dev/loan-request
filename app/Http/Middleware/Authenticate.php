@@ -18,4 +18,10 @@ class Authenticate extends Middleware
             return route('login');
         }
     }
+
+    // Add new method for api issue
+    protected function unauthenticated($request, array $guards)
+    {
+        abort(response()->json(['error'=>'Unauthorized request'], config('global.status.unauthorized')));             
+    }
 }
